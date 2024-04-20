@@ -152,7 +152,7 @@ class DeviceConstants:
         elif devicename == "R":
             return DeviceConstants.R_DEVICE, 10
         elif devicename == "ZR":
-            return DeviceConstants.ZR_DEVICE, 16
+            return DeviceConstants.ZR_DEVICE, 10 if plctype == iQR_SERIES else 16
         elif (devicename == "LTS") and (plctype == iQR_SERIES):
             return DeviceConstants.LTS_DEVICE, 10
         elif (devicename == "LTC") and (plctype == iQR_SERIES):
